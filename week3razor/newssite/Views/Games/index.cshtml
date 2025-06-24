@@ -1,0 +1,12 @@
+@model List<jouwprojectnaam.Models.Game>
+
+<h2>Game Lijst</h2>
+
+<ul>
+@foreach (var game in Model)
+{
+    <li>
+        <strong>@game.Title</strong> - @game.Platform (@game.Genre)
+    </li>
+}
+</ul>
