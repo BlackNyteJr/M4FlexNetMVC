@@ -1,0 +1,28 @@
+body { 
+    font-family: Arial; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+        
+h1 { 
+    text-align: center; 
+    color: #333; 
+}
+        
+article { 
+    text-align: center; 
+    margin: 20px 0; 
+}
+        
+#stages { 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+        
+.stage { 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    width: 100%; 
+}
