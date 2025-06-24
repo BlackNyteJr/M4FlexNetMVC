@@ -1,8 +1,12 @@
+using System.Text.Json;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using newssite.Models;
 
 namespace newssite.Controllers;
+
+string json = System.IO.File.ReadAllText("data/news.json");
+newsItems = JsonSerializer.Deserialize<List<NewsItem>>(json);
 
 public class HomeController : Controller
 {
@@ -13,14 +17,11 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
     public IActionResult Privacy()
     {
-        return View();
+        Privacy model = new Privacy();
+        model.policyText = "We do not track anything";
+        return View(model);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

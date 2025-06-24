@@ -1,0 +1,12 @@
+[
+    {
+        "Title": "JSON dit bericht is nieuw",
+        "Content": "JSON lijstjes ook met newsitems",
+        "ImageUrl": "img/newsitem.PNG"
+    },
+    {
+        "Title": "JSON mijn eerste model",
+        "Content": "JSON was niet zo moeilijk om te maken",
+        "ImageUrl": "img/newsitem.PNG"
+    }
+]
