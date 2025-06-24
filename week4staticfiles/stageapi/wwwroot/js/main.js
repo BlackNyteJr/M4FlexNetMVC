@@ -16,7 +16,7 @@ async function getData() {
   }
 }
 
-.then(response  => response.text())
-.then((text) => {
-    stages.innerHTML = text;
+.then(response  => response.json())
+.then((json) => {
+    console.log(json);
 })
