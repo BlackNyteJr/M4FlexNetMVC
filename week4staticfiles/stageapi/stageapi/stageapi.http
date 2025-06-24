@@ -1,0 +1,6 @@
+@stageapi_HostAddress = http://localhost:5023
+
+GET {{stageapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
